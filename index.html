@@ -2,44 +2,40 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakesbook Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Explore Philippines</title>
 </head>
 <body>
-    <div class="container" id="container">
-        <form class="login-form" id="loginForm">
-            <h2>Welcome to Fakesbook</h2>
-            <input type="email" placeholder="Email or Phone">
-            <input type="password" placeholder="Password">
-            <button type="button" onclick="showImage()">Log In</button>
-            <a href="#">Forgot password?</a>
-            <hr>
-            <button type="button">Create New Account</button>
-        </form>
-        <p id="prankText" class="prank-text" style="display: none;">IT'S A PRANK HAHA</p>
+  <div class="slide home">
+    <div class="slide-content">
+      <h1>Explore Top Destinations of the <span class="highlight">Philippines</span>.</h1>
+      <div class="destination-preview" onclick="window.location.href='boracay.html'">
+        <img src="boracay-small.jpeg" alt="Boracay">
+        <div class="destination-info">
+          <h2>Boracay</h2>
+          <p>Boracay is a small island in the central Philippines known for its resorts and beaches.</p>
+          <a href="boracay.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="destination-preview" onclick="window.location.href='coron.html'">
+        <img src="coron-small.jpeg" alt="Coron Palawan">
+        <div class="destination-info">
+          <h2>Coron Palawan</h2>
+          <p>Coron is a municipality in Palawan, famous for its stunning landscapes and diving spots.</p>
+          <a href="coron.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="destination-preview" onclick="window.location.href='chocolate-hills.html'">
+        <img src="chocolate-hills-small.jpeg" alt="Chocolate Hills of Bohol">
+        <div class="destination-info">
+          <h2>Chocolate Hills of Bohol</h2>
+          <p>The Chocolate Hills are a geological formation in Bohol, Philippines.</p>
+          <a href="chocolate-hills.html" class="btn">Learn More</a>
+        </div>
+      </div>
     </div>
-    <img id="loginImage" src="IMg.jpg" style="display: none; max-width: 100%; height: auto;">
-<script>
-    function showImage() {
-        var loginForm = document.getElementById('loginForm');
-        var image = document.getElementById('loginImage');
-        var prankText = document.getElementById('prankText');
-        var container = document.getElementById('container');
-
-        // Hide login form
-        loginForm.style.display = 'none';
-
-        // Show image
-        image.style.display = 'block';
-
-        // Show prank text
-        prankText.style.display = 'block';
-
-        // Disable pointer events on the container to prevent clicking on elements behind
-        container.style.pointerEvents = 'none';
-    }
-</script>
+  </div>
 </body>
 </html>

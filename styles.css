@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide {
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    height: 1024px; /* Adjust based on your background image size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide-content {
+    text-align: center;
+    color: #fff; /* Text color for better contrast on background */
+    max-width: 800px;
+    margin: auto; /* Center content horizontally */
+  }
+  
+  .slide h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .slide img {
+    width: 100%;
+    max-width: 600px; /* Adjust image max-width as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .slide p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff; /* Text color for better contrast on background */
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #45a049; /* Darker shade of button color on hover */
+  }
+  
+  .destination-preview img {
+    width: 100%;
+    max-width: 300px; /* Adjust image size as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .destination-preview h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .destination-preview p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  /* Additional Styles */
+  .destination-preview {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .destination-preview:hover {
+    transform: scale(1.1);
+  }
