@@ -11,7 +11,7 @@ body {
     background-image: url('gray1.jpeg'); /* Replace with your actual home background image */
     background-size: cover;
     background-position: center;
-    height: 387vh; /* Full viewport height */
+    height: 370vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
